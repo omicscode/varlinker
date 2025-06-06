@@ -1,7 +1,7 @@
 # varlinker
 
 - variant linker for genome annotation
-- 
+
 ![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
 
 - Parallel threaded variant linker.
