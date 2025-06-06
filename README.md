@@ -1,6 +1,6 @@
 # varlinker
 
-- variant linker for genome annotation
+- variant linker for variant annotation
 
 ![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
 
