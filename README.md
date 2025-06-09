@@ -1,13 +1,9 @@
 # varlinker
 
-- variant linker for genome annotation.
-- sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
-=======
-- variant linker for variant annotation
-
 ![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
 
 - Parallel threaded variant linker.
+- sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
 
 - Acknowledgements: MOSAIC platform, developed as part of the ECBiG-MOSAIC project (POIR.04.02.00-00-D017/20), co-financed by the European Regional Development Fund (ERDF) under the Smart Growth Operational Programme 2014-2020, Measure 4.2 for the development of modern research infrastructure in the science sector.
 - Project PI and Informal queries: Prof. Luiza Handschuh: luizahan@ibch.poznan.pl.
