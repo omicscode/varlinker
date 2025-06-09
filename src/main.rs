@@ -1,15 +1,15 @@
 mod args;
 mod store;
-mod variantlinker;
 mod varaltannot;
+mod variantlinker;
 mod varrefannot;
 use crate::args::CommandParse;
 use crate::args::Commands;
-use clap::Parser;
+use crate::varaltannot::varaltanno;
 use crate::variantlinker::varlinker;
 use crate::varrefannot::varrefanno;
-use crate::varaltannot::varaltanno;
-
+use clap::Parser;
+use async_std::task;
 
 /*
  Authom GauravSablok
@@ -23,15 +23,15 @@ fn main() {
     let argsparse = CommandParse::parse();
     match &argsparse.command {
         Commands::VARIANTLINKER { vcfile } => {
-            let command = varlinker(vcfile).unwrap();
+            let command = task::block_on(varlinker(vcfile)).unwrap();
             println!("The command has been completed:{:?}", command);
         }
         Commands::VARIANTALTANNO { vcffile, altallel } => {
-            let command = varaltanno(vcffile, altallel).unwrap();
+            let command = task::block_on(varaltanno(vcffile, altallel)).unwrap();
             println!("The command has been completed:{:?}", command);
         }
         Commands::VARIANTREFANNO { vcffile, refallele } => {
-            let command = varrefanno(vcffile, refallele).unwrap();
+            let command = task::block_on(varrefanno(vcffile, refallele)).unwrap();
             println!("The command has been completed:{:?}", command);
         }
     }

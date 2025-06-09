@@ -38,5 +38,5 @@ pub enum Commands {
         vcffile: String,
         /// alt allele
         altallel: String,
-    }
+    },
 }

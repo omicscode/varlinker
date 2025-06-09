@@ -6,4 +6,3 @@ edition = "2024"
 [dependencies]
 async-std = "1.13.1"
 clap = { version = "4.5.39", features = ["derive"] }
-tokio = "1.45.1"
