@@ -1,6 +1,7 @@
 # varlinker
 
-- variant linker for genome annotation
+- variant linker for genome annotation.
+- sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
 
 ![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
 
