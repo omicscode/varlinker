@@ -8,8 +8,8 @@ use crate::args::Commands;
 use crate::varaltannot::varaltanno;
 use crate::variantlinker::varlinker;
 use crate::varrefannot::varrefanno;
-use clap::Parser;
 use async_std::task;
+use clap::Parser;
 
 /*
  Authom GauravSablok
@@ -22,15 +22,15 @@ use async_std::task;
 fn main() {
     let argsparse = CommandParse::parse();
     match &argsparse.command {
-        Commands::VARIANTLINKER { vcfile } => {
+        Commands::VariantLINKER { vcfile } => {
             let command = task::block_on(varlinker(vcfile)).unwrap();
             println!("The command has been completed:{:?}", command);
         }
-        Commands::VARIANTALTANNO { vcffile, altallel } => {
+        Commands::VariantTALTANNO { vcffile, altallel } => {
             let command = task::block_on(varaltanno(vcffile, altallel)).unwrap();
             println!("The command has been completed:{:?}", command);
         }
-        Commands::VARIANTREFANNO { vcffile, refallele } => {
+        Commands::VariantTREFANNO { vcffile, refallele } => {
             let command = task::block_on(varrefanno(vcffile, refallele)).unwrap();
             println!("The command has been completed:{:?}", command);
         }

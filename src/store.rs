@@ -11,7 +11,7 @@ pub struct VCF {
 
 #[derive(Debug, Clone, PartialOrd, PartialEq)]
 
-pub struct GENCODE {
+pub struct GenCode {
     pub chrom: String,
     pub typeannotate: String,
     pub start: usize,

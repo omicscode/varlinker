@@ -1,6 +1,7 @@
-use crate::store::GENCODE;
+use crate::store::GenCode;
 use crate::store::OUTPUT;
 use crate::store::VCF;
+use async_std::task;
 use std::error::Error;
 use std::fs::File;
 use std::io::Write;
@@ -26,8 +27,8 @@ pub async fn varlinker(pathfile: &str) -> Result<String, Box<dyn Error>> {
         .expect("command failed");
     let fileopen = File::open(pathfile).expect("file not present");
     let fileread = BufReader::new(fileopen);
-    let gtfresults: Vec<GENCODE> =
-        gtfread("gencode.v48.chr_patch_hapl_scaff.annotation.gtf").unwrap();
+    let gtfresults: Vec<GenCode> =
+        task::block_on(gtfread("gencode.v48.chr_patch_hapl_scaff.annotation.gtf")).unwrap();
     let mut vcstring_file: Vec<VCF> = Vec::new();
     for i in fileread.lines() {
         let linevcf = i.expect("file not present");
@@ -81,10 +82,10 @@ pub async fn varlinker(pathfile: &str) -> Result<String, Box<dyn Error>> {
     Ok("The regions have been annotated".to_string())
 }
 
-pub fn gtfread(gtffile: &str) -> Result<Vec<GENCODE>, Box<dyn Error>> {
+pub async fn gtfread(gtffile: &str) -> Result<Vec<GenCode>, Box<dyn Error>> {
     let fileopen = File::open(gtffile).expect("file not found");
     let fileread = BufReader::new(fileopen);
-    let mut gtf_vector: Vec<GENCODE> = Vec::new();
+    let mut gtf_vector: Vec<GenCode> = Vec::new();
     for i in fileread.lines() {
         let linegtf = i.expect("line not found");
         let linevec: Vec<String> = linegtf
@@ -96,7 +97,7 @@ pub fn gtfread(gtffile: &str) -> Result<Vec<GENCODE>, Box<dyn Error>> {
             .split("-")
             .collect::<Vec<_>>()[1]
             .to_string();
-        gtf_vector.push(GENCODE {
+        gtf_vector.push(GenCode {
             chrom: linevec[0].clone(),
             typeannotate: linevec[2].clone(),
             start: linevec[3].parse::<usize>().unwrap(),

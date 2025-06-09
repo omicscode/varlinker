@@ -21,19 +21,19 @@ pub struct CommandParse {
 #[derive(Subcommand, Debug)]
 pub enum Commands {
     /// annotate the specific coordinate
-    VARIANTLINKER {
+    VariantLINKER {
         /// variant VCF file
         vcfile: String,
     },
     /// extract the annotation of the specific ref allele
-    VARIANTREFANNO {
+    VariantTREFANNO {
         /// variant VCF file
         vcffile: String,
         /// ref allele
         refallele: String,
     },
     /// extract the annotation of the specific alt allele
-    VARIANTALTANNO {
+    VariantTALTANNO {
         /// variant VCF file
         vcffile: String,
         /// alt allele
