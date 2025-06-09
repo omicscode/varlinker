@@ -25,4 +25,18 @@ pub enum Commands {
         /// variant VCF file
         vcfile: String,
     },
+    /// extract the annotation of the specific ref allele
+    VARIANTREFANNO {
+        /// variant VCF file
+        vcffile: String,
+        /// ref allele
+        refallele: String,
+    },
+    /// extract the annotation of the specific alt allele
+    VARIANTALTANNO {
+        /// variant VCF file
+        vcffile: String,
+        /// alt allele
+        altallel: String,
+    }
 }

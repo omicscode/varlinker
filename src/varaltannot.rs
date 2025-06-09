@@ -13,7 +13,7 @@ use crate::store::VCF;
  Date: 2025-6-9
 */
 
-pub fn varlinker(pathfile : &str) -> Result<String, Box<dyn Error>>{
+pub fn varaltanno(pathfile : &str, variant: &str) -> Result<String, Box<dyn Error>>{
 
     let _ = Command::new("wegt").
         arg("https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_48/gencode.v48.chr_patch_hapl_scaff.annotation.gtf.gz")

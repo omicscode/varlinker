@@ -12,5 +12,6 @@ pub struct VCF {
 #[derive(Debug, Clone, PartialOrd, PartialEq)]
 
 pub struct GENCODE {
-    pub
+    pub chrom: String,
+    pub typeannotate: String,
 }
