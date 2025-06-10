@@ -2,6 +2,12 @@
 name = "varlinker"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+authors = ["Gaurav Sablok <gsablok@ibch.poznan.pl>"]
+description = "varlinker for human genomics"
+homepage = "https://github.com/IBCHgenomic/varlinker"
+repository = "https://github.com/IBCHgenomic/varlinker"
+
 
 [dependencies]
 async-std = "1.13.1"
