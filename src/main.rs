@@ -12,7 +12,7 @@ use async_std::task;
 use clap::Parser;
 
 /*
- Authom GauravSablok
+ Author Gaurav Sablok
  Instytut Chemii Bioorganicznej
  Polskiej Akademii Nauk
  ul. Noskowskiego 12/14 | 61-704, Poznań
