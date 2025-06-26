@@ -1,7 +1,6 @@
 # varlinker
 
-![](https://github.com/IBCHgenomic/varlinker/blob/main/varlinker.png)
-![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
+<img src="https://github.com/IBCHgenomic/varlinker/blob/main/varlinker.png" width="350" />
 
 - Parallel threaded variant linker.
 - sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
