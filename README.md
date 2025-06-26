@@ -1,5 +1,6 @@
 # varlinker
 
+![](https://github.com/IBCHgenomic/varlinker/blob/main/varlinker.png)
 ![](https://github.com/IBCHgenomic/eVaiutilities/blob/main/logo.png)
 
 - Parallel threaded variant linker.
