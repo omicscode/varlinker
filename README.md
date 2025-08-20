@@ -1,10 +1,7 @@
 # varlinker
 
-<img src="https://github.com/IBCHgenomic/varlinker/blob/main/varlinker.png" width="350" />
-
 - Parallel threaded variant linker.
 - sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
-
 
 ```
 specific position annotator for human genomics.
@@ -78,4 +75,8 @@ cargo xwin build --target x86_64-pc-windows-msvc
 - Project PI and Informal queries: Prof. Luiza Handschuh: luizahan@ibch.poznan.pl.
 - Code related queries: Dr. Gaurav Sablok: gsablok@ibch.poznan.pl.
 
-Gaurav Sablok Instytut Chemii Bioorganicznej Polskiej Akademii Nauk ul. Noskowskiego 12/14 | 61-704, Poznań Poland
+Gaurav Sablok \
+Instytut Chemii Bioorganicznej \
+Polskiej Akademii Nauk \
+ul. Noskowskiego 12/14 | 61-704, Poznań \
+Poland
