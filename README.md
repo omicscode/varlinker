@@ -4,26 +4,32 @@
 - sample vcf file from [vcflib](https://github.com/vcflib/vcflib/blob/master/samples/sample.vcf)
 
 ```
+__   __   __ _   _ __  | |     (_)  _ __   | | __   ___   _ __
+\ \ / /  / _` | | '__| | |     | | | '_ \  | |/ /  / _ \ | '__|
+ \ V /  | (_| | | |    | |___  | | | | | | |   <  |  __/ | |
+  \_/    \__,_| |_|    |_____| |_| |_| |_| |_|\_\  \___| |_|
+
+
 specific position annotator for human genomics.
-       ************************************************
-      Gaurav Sablok, IBCH, PAN, Poznan, Poland,
-      https://portal.ichb.pl/laboratory-of-genomics/.
-      Email: gsablok@ibch.poznan.pl
-      Prof. Luiza Handschuh
-      Email: luizahan@ibch.poznan.pl.
       ************************************************
+     Gaurav Sablok, IBCH, PAN, Poznan, Poland,
+     https://portal.ichb.pl/laboratory-of-genomics/.
+     Email: gsablok@ibch.poznan.pl
+     Prof. Luiza Handschuh
+     Email: luizahan@ibch.poznan.pl.
+     ************************************************
 
 Usage: varlinker <COMMAND>
 
 Commands:
-  variantlinker   annotate the specific coordinate
-  variantrefanno  extract the annotation of the specific ref allele
-  variantaltanno  extract the annotation of the specific alt allele
-  help            Print this message or the help of the given subcommand(s)
+ variant-linker    annotate the specific coordinate
+ variant-trefanno  extract the annotation of the specific ref allele
+ variant-taltanno  extract the annotation of the specific alt allele
+ help              Print this message or the help of the given subcommand(s)
 
 Options:
-  -h, --help     Print help
-  -V, --version  Print version
+ -h, --help     Print help
+ -V, --version  Print version
 ```
 
 - Annotate only the ref variant with A

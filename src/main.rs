@@ -10,6 +10,7 @@ use crate::variantlinker::varlinker;
 use crate::varrefannot::varrefanno;
 use async_std::task;
 use clap::Parser;
+use figlet_rs::FIGfont;
 
 /*
  Author Gaurav Sablok
@@ -20,6 +21,10 @@ use clap::Parser;
 */
 
 fn main() {
+    let standard_font = FIGfont::standard().unwrap();
+    let figure = standard_font.convert("varLinker");
+    assert!(figure.is_some());
+    println!("{}", figure.unwrap());
     let argsparse = CommandParse::parse();
     match &argsparse.command {
         Commands::VariantLINKER { vcfile } => {
