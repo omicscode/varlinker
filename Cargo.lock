@@ -584,7 +584,7 @@ checksum = "943ce29a8a743eb10d6082545d861b24f9d1b160b7d741e0f2cdf726bec909c5"
 
 [[package]]
 name = "varlinker"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "async-std",
  "clap",

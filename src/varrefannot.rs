@@ -10,11 +10,8 @@ use std::path::Path;
 use std::process::Command;
 
 /*
- Author Gaurav Sablok
- Instytut Chemii Bioorganicznej
- Polskiej Akademii Nauk
- ul. Noskowskiego 12/14 | 61-704, Poznań
- Date: 2025-6-9
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
 */
 
 pub async fn varrefanno(pathfile: &str, variant: &str) -> Result<String, Box<dyn Error>> {

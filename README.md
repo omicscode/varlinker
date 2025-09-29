@@ -5,6 +5,7 @@
 
 ```
 __   __   __ _   _ __  | |     (_)  _ __   | | __   ___   _ __
+__   __   __ _   _ __  | |     (_)  _ __   | | __   ___   _ __
 \ \ / /  / _` | | '__| | |     | | | '_ \  | |/ /  / _ \ | '__|
  \ V /  | (_| | | |    | |___  | | | | | | |   <  |  __/ | |
   \_/    \__,_| |_|    |_____| |_| |_| |_| |_|\_\  \___| |_|
@@ -12,11 +13,8 @@ __   __   __ _   _ __  | |     (_)  _ __   | | __   ___   _ __
 
 specific position annotator for human genomics.
       ************************************************
-     Gaurav Sablok, IBCH, PAN, Poznan, Poland,
-     https://portal.ichb.pl/laboratory-of-genomics/.
-     Email: gsablok@ibch.poznan.pl
-     Prof. Luiza Handschuh
-     Email: luizahan@ibch.poznan.pl.
+      Author Gaurav Sablok,
+      Email: codeprog@icloud.com
      ************************************************
 
 Usage: varlinker <COMMAND>
@@ -78,7 +76,4 @@ cargo xwin build --target x86_64-pc-windows-msvc
 ```
 
 Gaurav Sablok \
-Instytut Chemii Bioorganicznej \
-Polskiej Akademii Nauk \
-ul. Noskowskiego 12/14 | 61-704, Poznań \
-Poland
+codeprog@icloud.com

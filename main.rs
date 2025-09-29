@@ -3,18 +3,16 @@ use crate::args::CommandParse;
 use crate::args::Commands;
 use crate::clinicvar::clinvarmapper;
 use crate::clinvarlinker::clinvarvcf;
+use crate::databases::databasedownload;
 use crate::medgen::cuiparallel;
 use crate::ncbigeneid::ncbiannotate;
 use crate::omim::omimevidence;
 use crate::phenotype::phenotypeall;
-use crate::databases::databasedownload;
 use clap::Parser;
 
 /*
- Authom GauravSablok
- Instytut Chemii Bioorganicznej
- Polskiej Akademii Nauk
- ul. Noskowskiego 12/14 | 61-704, Poznań
+ Author Gaurav Sablok,
+ Email: codeprog@icloud.com
  Date: 2025-4-8
 */
 
@@ -85,9 +83,12 @@ fn main() {
                 phenotypeall(genesdisease, genesphenotype, phenotypehpoa, phenotypesgenes).unwrap();
             println!("The command has finished: {:?}", command);
         }
-       Commands::Databases { databaseoption } => {
-                 let command = databasedownload(*databaseoption).unwrap();
-                 println!("The command has been finished and all the files have been downloaded:{}", command);
-       }
+        Commands::Databases { databaseoption } => {
+            let command = databasedownload(*databaseoption).unwrap();
+            println!(
+                "The command has been finished and all the files have been downloaded:{}",
+                command
+            );
+        }
     }
 }

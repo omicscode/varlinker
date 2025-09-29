@@ -1,12 +1,12 @@
 [package]
 name = "varlinker"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2024"
 license = "MIT"
-authors = ["Gaurav Sablok <gsablok@ibch.poznan.pl>"]
+authors = ["Gaurav Sablok <codeprog@icloud.com>"]
 description = "varlinker for human genomics"
-homepage = "https://github.com/IBCHgenomic/varlinker"
-repository = "https://github.com/IBCHgenomic/varlinker"
+homepage = "https://github.com/omicscode/varlinker"
+repository = "https://github.com/omicscode/varlinker"
 
 
 [dependencies]
